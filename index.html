@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./imagenes/seguridad.svg">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" rel="">
+            <img class="logo" src="./imagenes/logo.svg" alt="Logo Alura">
+        </a>
+        <p class="titulo">Encripta un mensaje</p>
+    </header>
+
+    <main id="principal">
+        <section class="seccion_primaria">
+            <textarea class="caja_texto" id="encriptar" placeholder="Ingresa tu texto aquí"></textarea>
+            <div class="encriptador-aviso">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor_botones">
+                <button type="button" id="btn-encriptar" class="boton_encriptador">Encriptar</button>
+                <button type="button" id="btn-desencriptar" class="boton_desencriptador">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion_secundaria">
+            <div class="contenedor_muneco">
+                <img src="./imagenes/muñeco.png" alt="Imagen Muñeco">
+            </div>
+            <div class="contenedor_parrafo">
+                <textarea class="mensaje_final" readonly placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="informacion" class="parrafo_infomacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="contenedor_copiar">
+                <button type="button" class="boton_copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">&copy; copyright 2024 - Encriptador de Texto - desarrollado por Jose Ausejo</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/" rel="">
+                <img src="./imagenes/linkedin.svg" alt="Logo Linkedin" class="linked">
+            </a>
+            <a href="https://github.com/" rel="">
+                <img src="./imagenes/github.svg" alt="Logo Github" class="git">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/encriptador.js"></script>
+</body>
+</html>
